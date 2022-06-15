@@ -1,9 +1,10 @@
 function createAudios() {
   const arrayThre = ['q','w','e','a','s','d','z','x','c'];
-  for (let index = 0; index < arraythre.length; index += 1) {
+  for (let index = 0; index < arrayThre.length; index += 1) {
     const createAudio = document.createElement('audio');
     document.body.appendChild(createAudio);
-    createAudio.setAttribute('id', `s_key`)      
+    createAudio.setAttribute('id', `s_key${arrayThre[index]}`);
+    createAudio.setAttribute('src', `./assets/sounds/key${arrayThre[index]}.wav`)    
   }
 }
 
