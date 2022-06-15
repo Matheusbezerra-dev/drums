@@ -1,3 +1,13 @@
+function createFooter() {
+  const createElement = document.createElement('footer');
+  document.body.appendChild(createElement);
+  createElement.innerText = 'criado por ';
+  const createA = document.createElement('a')
+  document.querySelector('footer').appendChild(createA);
+  createA.innerText = 'Matheus';
+  createA.setAttribute('href', 'https://www.linkedin.com/in/matheusbezerra-dev/'); 
+}
+
 function createAudios() {
   const arrayThre = ['q','w','e','a','s','d','z','x','c'];
   for (let index = 0; index < arrayThre.length; index += 1) {
@@ -43,4 +53,5 @@ function createMainAndHeader() {
 
 window.onload = () => {
   createMainAndHeader()
+  createFooter()
 }
